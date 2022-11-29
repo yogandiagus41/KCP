@@ -1,0 +1,13 @@
+CRITICAL - 2022-11-25 00:00:22 --> Undefined variable $Url
+in APPPATH\Views\tamplate.php on line 5.
+ 1 APPPATH\Views\tamplate.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Url', 'APPPATH\\Views\\tamplate.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tamplate.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Tamplate.php', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Customer/Customer_detail', [], true)
+ 6 APPPATH\Controllers\Customer.php(88): view('Customer/Customer_detail', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customer->Detail_data_customer('KCP-CTM-1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

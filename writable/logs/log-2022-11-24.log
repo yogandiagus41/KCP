@@ -1,0 +1,233 @@
+CRITICAL - 2022-11-24 00:19:32 --> Undefined array key "CITY_OF_BANK"
+in APPPATH\Views\Publishing\Publishing_detail.php on line 232.
+ 1 APPPATH\Views\Publishing\Publishing_detail.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CITY_OF_BANK"', 'APPPATH\\Views\\Publishing\\Publishing_detail.php', 232)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Publishing\\Publishing_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 5 APPPATH\Controllers\Publishing.php(119): view('Publishing/Publishing_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 00:26:54 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\Publishing.php on line 128.
+ 1 APPPATH\Controllers\Publishing.php(128): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Update_data_publishing('KCP-PLS-3')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 00:32:04 --> Undefined array key 0
+in APPPATH\Views\Composer\Composer_detail.php on line 78.
+ 1 APPPATH\Views\Composer\Composer_detail.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\Composer\\Composer_detail.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(196): view('Composer/Composer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-7')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 00:35:41 --> Unmatched '}'
+in APPPATH\Views\Composer\Composer_detail.php on line 67.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 3 APPPATH\Controllers\Composer.php(197): view('Composer/Composer_detail.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-7')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:06:57 --> Unclosed '{' on line 313
+in APPPATH\Views\Publishing\Publishing_detail.php on line 400.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 3 APPPATH\Controllers\Publishing.php(119): view('Publishing/Publishing_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-3')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:14:28 --> Undefined array key 0
+in APPPATH\Views\Publishing\Publishing_detail.php on line 56.
+ 1 APPPATH\Views\Publishing\Publishing_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\Publishing\\Publishing_detail.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Publishing\\Publishing_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 5 APPPATH\Controllers\Publishing.php(119): view('Publishing/Publishing_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-000')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:15:42 --> Invalid file: template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template.php', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('template.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:16:21 --> Invalid file: template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template.php', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('template.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:17:10 --> Undefined variable $Last_id_composer
+in APPPATH\Views\Composer\Composer_index.php on line 19.
+ 1 APPPATH\Views\Composer\Composer_index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Last_id_composer', 'APPPATH\\Views\\Composer\\Composer_index.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_index.php', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('Composer/Composer_index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 01:31:31 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\Publishing.php on line 131.
+ 1 APPPATH\Controllers\Publishing.php(131): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Update_data_publishing('KCP-PLS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:49:56 --> Undefined variable $Last_id_publishing
+in APPPATH\Views\Performer\Performer_index.php on line 18.
+ 1 APPPATH\Views\Performer\Performer_index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Last_id_publishing', 'APPPATH\\Views\\Performer\\Performer_index.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Performer\\Performer_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Performer/Performer_index', [], true)
+ 5 APPPATH\Controllers\Performer.php(29): view('Performer/Performer_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:14:24 --> Undefined array key "ID_PUBLISHING"
+in APPPATH\Views\Performer\Performer_detail.php on line 16.
+ 1 APPPATH\Views\Performer\Performer_detail.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID_PUBLISHING"', 'APPPATH\\Views\\Performer\\Performer_detail.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Performer\\Performer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Performer/Performer_detail.php', [], true)
+ 5 APPPATH\Controllers\Performer.php(81): view('Performer/Performer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->Detail_data_performer('KCP-PFM-2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:15:16 --> Undefined variable $Last_id_performer
+in APPPATH\Views\Performer\Performer_detail.php on line 23.
+ 1 APPPATH\Views\Performer\Performer_detail.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Last_id_performer', 'APPPATH\\Views\\Performer\\Performer_detail.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Performer\\Performer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Performer/Performer_detail.php', [], true)
+ 5 APPPATH\Controllers\Performer.php(81): view('Performer/Performer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->Detail_data_performer('KCP-PFM-2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 21:13:37 --> Undefined array key 2
+in APPPATH\Controllers\Publishing.php on line 17.
+ 1 APPPATH\Controllers\Publishing.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Controllers\\Publishing.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 21:17:43 --> Undefined array key "PUBLISHING_ALIAS_NAME"
+in APPPATH\Controllers\Publishing.php on line 125.
+ 1 APPPATH\Controllers\Publishing.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PUBLISHING_ALIAS_NAME"', 'APPPATH\\Controllers\\Publishing.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 21:27:58 --> Undefined array key "PERFORMER_POPULAR_NAME"
+in APPPATH\Views\Performer\Performer_index.php on line 88.
+ 1 APPPATH\Views\Performer\Performer_index.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PERFORMER_POPULAR_NAME"', 'APPPATH\\Views\\Performer\\Performer_index.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Performer\\Performer_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Performer/Performer_index', [], true)
+ 5 APPPATH\Controllers\Performer.php(29): view('Performer/Performer_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-24 21:32:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''KCP-PFM-1' at line 1 in C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php(292): mysqli->query('update tb_perfo...', 0)
+#1 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_perfo...')
+#2 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_perfo...')
+#3 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\app\Controllers\Performer.php(111): CodeIgniter\Database\BaseConnection->query('update tb_perfo...')
+#4 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(927): App\Controllers\Performer->Update_data_performer('KCP-PFM-1')
+#5 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+#6 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\agusy\\...')
+#9 {main}
+CRITICAL - 2022-11-24 21:32:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''KCP-PFM-1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1')
+ 4 APPPATH\Controllers\Performer.php(111): CodeIgniter\Database\BaseConnection->query('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->Update_data_performer('KCP-PFM-1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-24 21:34:02 --> mysqli_sql_exception: Unknown column 'PERFROMER_ORIGINAL_NAME' in 'field list' in C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php(292): mysqli->query('update tb_perfo...', 0)
+#1 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_perfo...')
+#2 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_perfo...')
+#3 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\app\Controllers\Performer.php(111): CodeIgniter\Database\BaseConnection->query('update tb_perfo...')
+#4 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(927): App\Controllers\Performer->Update_data_performer('KCP-PFM-1')
+#5 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+#6 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\agusy\Downloads\JMM-PROJECT-KCP\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\agusy\\...')
+#9 {main}
+CRITICAL - 2022-11-24 21:34:02 --> Unknown column 'PERFROMER_ORIGINAL_NAME' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1\'')
+ 4 APPPATH\Controllers\Performer.php(111): CodeIgniter\Database\BaseConnection->query('update tb_performer set PERFROMER_ORIGINAL_NAME = \'Performer 1 asd\', PERFORMER_POPULAR_NAME=\'sadd,tydd\', PHOTO=\'\' where ID_PERFORMER = \'KCP-PFM-1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->Update_data_performer('KCP-PFM-1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 21:45:14 --> Call to a member function getName() on null
+in APPPATH\Controllers\Performer.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Performer->Update_data_performer('KCP-PFM-1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Performer))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:59:33 --> Undefined variable $Get_performer
+in APPPATH\Views\Customer\Customer_detail.php on line 15.
+ 1 APPPATH\Views\Customer\Customer_detail.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Get_performer', 'APPPATH\\Views\\Customer\\Customer_detail.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Customer\\Customer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Customer/Customer_detail', [], true)
+ 5 APPPATH\Controllers\Customer.php(85): view('Customer/Customer_detail')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customer->Detail_data_customer('KCP-CTM-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

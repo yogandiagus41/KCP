@@ -1,0 +1,150 @@
+CRITICAL - 2022-11-21 20:39:28 --> Undefined variable $Get_data
+in APPPATH\Views\Composer\Composer_index.php on line 268.
+ 1 APPPATH\Views\Composer\Composer_index.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Get_data', 'APPPATH\\Views\\Composer\\Composer_index.php', 268)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_index.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(37): view('Composer/Composer_index.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:11:44 --> Undefined array key "ID_COMPOSER"
+in APPPATH\Controllers\Composer.php on line 74.
+ 1 APPPATH\Controllers\Composer.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID_COMPOSER"', 'APPPATH\\Controllers\\Composer.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:19:24 --> Undefined variable $Last_id_composer
+in APPPATH\Views\Composer\Composer_detail.php on line 15.
+ 1 APPPATH\Views\Composer\Composer_detail.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Last_id_composer', 'APPPATH\\Views\\Composer\\Composer_detail.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(72): view('Composer/Composer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:19:36 --> Undefined variable $Get_data_publishing
+in APPPATH\Views\Composer\Composer_detail.php on line 186.
+ 1 APPPATH\Views\Composer\Composer_detail.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Get_data_publishing', 'APPPATH\\Views\\Composer\\Composer_detail.php', 186)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(72): view('Composer/Composer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:20:24 --> Undefined variable $Url
+in APPPATH\Views\tamplate.php on line 5.
+ 1 APPPATH\Views\tamplate.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Url', 'APPPATH\\Views\\tamplate.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tamplate.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Tamplate.php', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 6 APPPATH\Controllers\Composer.php(72): view('Composer/Composer_detail.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:23:47 --> Array to string conversion
+in APPPATH\Views\Composer\Composer_detail.php on line 35.
+ 1 APPPATH\Views\Composer\Composer_detail.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Composer\\Composer_detail.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(73): view('Composer/Composer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:24:37 --> Array to string conversion
+in APPPATH\Controllers\Composer.php on line 69.
+ 1 APPPATH\Controllers\Composer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Composer.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:24:51 --> Undefined array key 1
+in APPPATH\Controllers\Composer.php on line 69.
+ 1 APPPATH\Controllers\Composer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Composer.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:25:13 --> Array to string conversion
+in APPPATH\Controllers\Composer.php on line 69.
+ 1 APPPATH\Controllers\Composer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Composer.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:26:06 --> Array to string conversion
+in APPPATH\Controllers\Composer.php on line 69.
+ 1 APPPATH\Controllers\Composer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Composer.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:26:44 --> Array to string conversion
+in APPPATH\Controllers\Composer.php on line 71.
+ 1 APPPATH\Controllers\Composer.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Composer.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 21:43:23 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Composer.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Composer.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Composer')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Composer')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Composer', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-21 22:37:04 --> Array to string conversion
+in APPPATH\Controllers\Composer.php on line 101.
+ 1 APPPATH\Controllers\Composer.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Composer.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Create_data_composer()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-21 22:41:02 --> mysqli_sql_exception: Duplicate entry 'KCP-CPS-3' for key 'PRIMARY' in C:\xampp\htdocs\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\JMM-PROJECT-KCP\system\Database\MySQLi\Connection.php(292): mysqli->query('insert into tb_...', 0)
+#1 C:\xampp\htdocs\JMM-PROJECT-KCP\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('insert into tb_...')
+#2 C:\xampp\htdocs\JMM-PROJECT-KCP\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('insert into tb_...')
+#3 C:\xampp\htdocs\JMM-PROJECT-KCP\app\Controllers\Composer.php(108): CodeIgniter\Database\BaseConnection->query('insert into tb_...')
+#4 C:\xampp\htdocs\JMM-PROJECT-KCP\system\CodeIgniter.php(927): App\Controllers\Composer->Create_data_composer()
+#5 C:\xampp\htdocs\JMM-PROJECT-KCP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+#6 C:\xampp\htdocs\JMM-PROJECT-KCP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\JMM-PROJECT-KCP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\JMM-PROJECT-KCP\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-11-21 22:41:02 --> Duplicate entry 'KCP-CPS-3' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('insert into tb_composer values (\'KCP-CPS-3\',\'agus yogandi\',\'kuplo denss\',\'M\', \'\',\'Bekasi\',\'Bekasi\',\'Bekasi\', \'Indonesia\', \'12345\', \'0989282828\', \'0909222222\',\'gatau isinya apaan\',\'agu@gmail.com\',\'12345\', \'12345\', \'12345\',\'BNI\',\'Agus \', \'09090921231272\', \'Bekasi\',\'Pondok Timur\',\'Agus\',\'KCP-PLS-3\',\'Karya Cipta Publisher (KCP)\',\'0\',\'Actived\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('insert into tb_composer values (\'KCP-CPS-3\',\'agus yogandi\',\'kuplo denss\',\'M\', \'\',\'Bekasi\',\'Bekasi\',\'Bekasi\', \'Indonesia\', \'12345\', \'0989282828\', \'0909222222\',\'gatau isinya apaan\',\'agu@gmail.com\',\'12345\', \'12345\', \'12345\',\'BNI\',\'Agus \', \'09090921231272\', \'Bekasi\',\'Pondok Timur\',\'Agus\',\'KCP-PLS-3\',\'Karya Cipta Publisher (KCP)\',\'0\',\'Actived\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('insert into tb_composer values (\'KCP-CPS-3\',\'agus yogandi\',\'kuplo denss\',\'M\', \'\',\'Bekasi\',\'Bekasi\',\'Bekasi\', \'Indonesia\', \'12345\', \'0989282828\', \'0909222222\',\'gatau isinya apaan\',\'agu@gmail.com\',\'12345\', \'12345\', \'12345\',\'BNI\',\'Agus \', \'09090921231272\', \'Bekasi\',\'Pondok Timur\',\'Agus\',\'KCP-PLS-3\',\'Karya Cipta Publisher (KCP)\',\'0\',\'Actived\')')
+ 4 APPPATH\Controllers\Composer.php(108): CodeIgniter\Database\BaseConnection->query('insert into tb_composer values (\'KCP-CPS-3\',\'agus yogandi\',\'kuplo denss\',\'M\', \'\',\'Bekasi\',\'Bekasi\',\'Bekasi\', \'Indonesia\', \'12345\', \'0989282828\', \'0909222222\',\'gatau isinya apaan\',\'agu@gmail.com\',\'12345\', \'12345\', \'12345\',\'BNI\',\'Agus \', \'09090921231272\', \'Bekasi\',\'Pondok Timur\',\'Agus\',\'KCP-PLS-3\',\'Karya Cipta Publisher (KCP)\',\'0\',\'Actived\')')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Create_data_composer()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

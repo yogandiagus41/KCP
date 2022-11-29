@@ -1,0 +1,172 @@
+ERROR - 2022-11-29 00:59:19 --> mysqli_sql_exception: Table 'jmm-project-kcp.tb_telephone' doesn't exist in C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php(292): mysqli->query('insert into tb_...', 0)
+#1 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('insert into tb_...')
+#2 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('insert into tb_...')
+#3 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\app\Controllers\Publishing.php(118): CodeIgniter\Database\BaseConnection->query('insert into tb_...')
+#4 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(927): App\Controllers\Publishing->Create_data_publishing()
+#5 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+#6 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\agusy\\...')
+#9 {main}
+CRITICAL - 2022-11-29 00:59:19 --> Table 'jmm-project-kcp.tb_telephone' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('insert into tb_telephone values (\'KCP-PLS-1\',\'111\',\'aaa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('insert into tb_telephone values (\'KCP-PLS-1\',\'111\',\'aaa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('insert into tb_telephone values (\'KCP-PLS-1\',\'111\',\'aaa\')')
+ 4 APPPATH\Controllers\Publishing.php(118): CodeIgniter\Database\BaseConnection->query('insert into tb_telephone values (\'KCP-PLS-1\',\'111\',\'aaa\')')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Create_data_publishing()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:01:47 --> Class "App\Models\TelephoneModel" not found
+in APPPATH\Controllers\Publishing.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:02:15 --> Undefined array key "PHONE_NUMBER"
+in APPPATH\Views\Publishing\Publishing_detail.php on line 105.
+ 1 APPPATH\Views\Publishing\Publishing_detail.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PHONE_NUMBER"', 'APPPATH\\Views\\Publishing\\Publishing_detail.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Publishing\\Publishing_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 5 APPPATH\Controllers\Publishing.php(143): view('Publishing/Publishing_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:02:51 --> Undefined array key "PHONE_NUMBER"
+in APPPATH\Views\Publishing\Publishing_detail.php on line 105.
+ 1 APPPATH\Views\Publishing\Publishing_detail.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PHONE_NUMBER"', 'APPPATH\\Views\\Publishing\\Publishing_detail.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Publishing\\Publishing_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 5 APPPATH\Controllers\Publishing.php(143): view('Publishing/Publishing_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:04:48 --> Undefined array key "SUBJECT_PHONE_NUMBER"
+in APPPATH\Views\Publishing\Publishing_detail.php on line 106.
+ 1 APPPATH\Views\Publishing\Publishing_detail.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SUBJECT_PHONE_NUMBER"', 'APPPATH\\Views\\Publishing\\Publishing_detail.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Publishing\\Publishing_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Publishing/Publishing_detail', [], true)
+ 5 APPPATH\Controllers\Publishing.php(144): view('Publishing/Publishing_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Publishing->Detail_data_publishing('KCP-PLS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publishing))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-29 01:16:51 --> mysqli_sql_exception: Unknown column 'ID_PERFORMER' in 'where clause' in C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\app\Models\CustomerModel.php(20): CodeIgniter\BaseModel->find()
+#7 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\app\Controllers\Customer.php(87): App\Models\CustomerModel->getAll('KCP-CTM-1')
+#8 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(927): App\Controllers\Customer->Detail_data_customer('KCP-CTM-1')
+#9 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#10 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\agusy\\...')
+#13 {main}
+CRITICAL - 2022-11-29 01:16:51 --> Unknown column 'ID_PERFORMER' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_customer`
+WHERE `ID_PERFORMER` = \'KCP-CTM-1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_customer`
+WHERE `ID_PERFORMER` = \'KCP-CTM-1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_customer`
+WHERE `ID_PERFORMER` = \'KCP-CTM-1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_customer`
+WHERE `ID_PERFORMER` = :ID_PERFORMER:', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\CustomerModel.php(20): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Customer.php(87): App\Models\CustomerModel->getAll('KCP-CTM-1')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customer->Detail_data_customer('KCP-CTM-1')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-29 01:17:57 --> mysqli_sql_exception: Unknown column 'PHONE_NUMBER' in 'field list' in C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\MySQLi\Connection.php(292): mysqli->query('update tb_custo...', 0)
+#1 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_custo...')
+#2 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_custo...')
+#3 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\app\Controllers\Customer.php(130): CodeIgniter\Database\BaseConnection->query('update tb_custo...')
+#4 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(927): App\Controllers\Customer->Update_data_customer('KCP-CTM-1')
+#5 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#6 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\agusy\Downloads\JMM-PROJECT-KCP-main\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\agusy\\...')
+#9 {main}
+CRITICAL - 2022-11-29 01:17:57 --> Unknown column 'PHONE_NUMBER' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('update tb_customer set CUSTOMER_NAME = \'testing\', PHONE_NUMBER=\'111,222\', SUBJECT_PHONE_NUMBER=\'one,two\' where ID_CUSTOMER = \'KCP-CTM-1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('update tb_customer set CUSTOMER_NAME = \'testing\', PHONE_NUMBER=\'111,222\', SUBJECT_PHONE_NUMBER=\'one,two\' where ID_CUSTOMER = \'KCP-CTM-1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('update tb_customer set CUSTOMER_NAME = \'testing\', PHONE_NUMBER=\'111,222\', SUBJECT_PHONE_NUMBER=\'one,two\' where ID_CUSTOMER = \'KCP-CTM-1\'')
+ 4 APPPATH\Controllers\Customer.php(130): CodeIgniter\Database\BaseConnection->query('update tb_customer set CUSTOMER_NAME = \'testing\', PHONE_NUMBER=\'111,222\', SUBJECT_PHONE_NUMBER=\'one,two\' where ID_CUSTOMER = \'KCP-CTM-1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customer->Update_data_customer('KCP-CTM-1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:55:07 --> Undefined array key "MOBILE_NUMBER"
+in APPPATH\Views\Composer\Composer_detail.php on line 212.
+ 1 APPPATH\Views\Composer\Composer_detail.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "MOBILE_NUMBER"', 'APPPATH\\Views\\Composer\\Composer_detail.php', 212)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Composer\\Composer_detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Composer/Composer_detail.php', [], true)
+ 5 APPPATH\Controllers\Composer.php(231): view('Composer/Composer_detail.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Detail_data_composer('KCP-CPS-1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 01:55:36 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\Composer.php on line 309.
+ 1 APPPATH\Controllers\Composer.php(309): implode(',', '123')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Update_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 02:02:01 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\Composer.php on line 309.
+ 1 APPPATH\Controllers\Composer.php(309): implode(',', '123')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Update_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 02:03:06 --> Undefined variable $Mobile_number
+in APPPATH\Controllers\Composer.php on line 317.
+ 1 APPPATH\Controllers\Composer.php(317): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Mobile_number', 'APPPATH\\Controllers\\Composer.php', 317)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Update_data_composer('KCP-CPS-1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-29 03:07:29 --> Undefined variable $Email
+in APPPATH\Controllers\Composer.php on line 180.
+ 1 APPPATH\Controllers\Composer.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Email', 'APPPATH\\Controllers\\Composer.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Composer->Create_data_composer()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Composer))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

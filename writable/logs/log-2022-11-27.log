@@ -1,0 +1,10 @@
+CRITICAL - 2022-11-27 23:02:21 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\tamplate.php on line 329.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Tamplate', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('Tamplate', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
