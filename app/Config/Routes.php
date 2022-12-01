@@ -42,7 +42,20 @@ $routes->get('/', 'Home::index');
 $routes->get('Composer', 'Composer::index', ['filter' => 'role:Admin']);
 $routes->post('/Create_data_composer', 'Composer::Create_data_composer', ['filter' => 'role:Admin']);
 $routes->get('/Composer/Detail/(:segment)', 'Composer::Detail_data_composer/$1', ['filter' => 'role:Admin']);
+
+
 $routes->post('/Update_data_composer/(:segment)', 'Composer::Update_data_composer/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_photo/(:segment)', 'Composer::Update_data_composer_photo/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_name/(:segment)', 'Composer::Update_data_composer_name/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_popular_name/(:segment)', 'Composer::Update_data_composer_popular_name/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_status/(:segment)', 'Composer::Update_data_composer_status/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_gender/(:segment)', 'Composer::Update_data_composer_gender/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_birth_place/(:segment)', 'Composer::Update_data_composer_birth_place/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_birth_date/(:segment)', 'Composer::Update_data_composer_birth_date/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_ipi_number/(:segment)', 'Composer::Update_data_composer_ipi_number/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_identity_number/(:segment)', 'Composer::Update_data_composer_identity_number/$1', ['filter' => 'role:Admin']);
+$routes->post('/Update_data_composer_tax_id_number/(:segment)', 'Composer::Update_data_composer_tax_id_number/$1', ['filter' => 'role:Admin']);
+
 $routes->get('/Composer/Delete/(:segment)', 'Composer::Delete_data_composer/$1', ['filter' => 'role:Admin']);
 
 // Publishing routes

@@ -82,9 +82,14 @@ class Composer extends BaseController
         $Composer_original_name = $this->request->getVar('Composer_original_name');
         // get popular name 
         $Composer_popular_name_temp = $this->request->getVar('Composer_popular_name');
-        if ($Composer_popular_name_temp) {
+        if ($Composer_popular_name_temp[0] && $Composer_popular_name_temp[1]) {
             $Composer_popular_name = implode(",", $Composer_popular_name_temp);
-        } else {
+          
+        } elseif($Composer_popular_name_temp[0]){
+            $Composer_popular_name = $Composer_popular_name_temp[0];
+        }elseif($Composer_popular_name_temp[1]){
+            $Composer_popular_name = $Composer_popular_name_temp[1];
+        }else {
             $Composer_popular_name = null;
         }
         // get phone number
@@ -176,7 +181,7 @@ class Composer extends BaseController
         }
 
 
-        // d($Phone_number);
+        // d($Composer_popular_name);
         // insert to database
         $db = \Config\Database::connect();
         $sql_composer = "insert into tb_composer values ('$New_id','$Composer_original_name','$Composer_popular_name','$Gender', '$Birth_date','$Birth_place','$Address','$City', '$Country', '$Post_code', '$Address_correspondence','$Email','$Identity_number', '$Tax_id_number', '$IPI_number','$Bank_name','$Bank_account_name', '$Bank_account_number', '$City_of_bank','$Branch','$CMO_name','$Original_publishing','$Sub_publishing','$Photo','$Status')";
@@ -232,18 +237,7 @@ class Composer extends BaseController
 
     public function Update_data_composer($id)
     {
-        // get photo
-        $Photo = $this->request->getFile('Photo');
-        $Photo_compare = $this->request->getVar('Photo_compare');
 
-        $New_Photo = 0;
-
-        if ($Photo->getName()) {
-            $Photo->move('Photo');
-            $New_Photo = $Photo->getName();
-        } else {
-            $New_Photo = $Photo_compare;
-        }
 
         // get original name
         $Composer_original_name = $this->request->getVar('Composer_original_name');
@@ -313,7 +307,7 @@ class Composer extends BaseController
 
 
         $db = \Config\Database::connect();
-        $sql_composer = "Update tb_composer set COMPOSER_ORIGINAL_NAME = '$Composer_original_name', COMPOSER_POPULAR_NAME = '$Composer_popular_name', IPI_NUMBER ='$IPI_number',PHOTO = '$New_Photo' where ID_COMPOSER = '$id' ";
+        $sql_composer = "Update tb_composer set COMPOSER_ORIGINAL_NAME = '$Composer_original_name', COMPOSER_POPULAR_NAME = '$Composer_popular_name' where ID_COMPOSER = '$id' ";
         $db->query($sql_composer);
 
         $sql_telephone = "update tb_telephone set TELEPHONE_NUMBER = '$Phone_number', TELEPHONE_SUBJECT='$Subject_phone_number' where ID_TELEPHONE = '$id'";
@@ -321,6 +315,142 @@ class Composer extends BaseController
         session()->setFlashdata('add', $id . ' Succes Updated!');
         return redirect()->to('/Composer/Detail/'.$id);
     }
+
+    
+
+    public function Update_data_composer_photo($id)
+    {
+        // get photo
+        $Photo = $this->request->getFile('Photo');
+        $Photo_compare = $this->request->getVar('Photo_compare');
+
+        $New_Photo = 0;
+
+        if ($Photo->getName()) {
+            $Photo->move('Photo');
+            $New_Photo = $Photo->getName();
+        } else {
+            $New_Photo = $Photo_compare;
+        }
+
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set PHOTO = '$New_Photo' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Photo '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_name($id)
+    {
+        // get name
+        $Name = $this->request->getVar('Name');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set COMPOSER_ORIGINAL_NAME = '$Name' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Name '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_popular_name($id)
+    {
+        // get popular name
+        $Composer_popular_name_temp = $this->request->getVar('Composer_popular_name');
+        if ($Composer_popular_name_temp[0] && $Composer_popular_name_temp[1]) {
+            $Composer_popular_name = implode(",", $Composer_popular_name_temp);
+          
+        } elseif($Composer_popular_name_temp[0]){
+            $Composer_popular_name = $Composer_popular_name_temp[0];
+        }elseif($Composer_popular_name_temp[1]){
+            $Composer_popular_name = $Composer_popular_name_temp[1];
+        }else {
+            $Composer_popular_name = null;
+        }
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set COMPOSER_POPULAR_NAME = '$Composer_popular_name' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Popular Name '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_status($id)
+    {
+        // get status
+        $Status = $this->request->getVar('Status');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set STATUS = '$Status' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Status '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_gender($id)
+    {
+        // get gender
+        $Gender = $this->request->getVar('Gender');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set GENDER = '$Gender' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Gender '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_birth_place($id)
+    {
+        // get birth place
+        $Birth_place = $this->request->getVar('Birth_place');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set BIRTH_PLACE = '$Birth_place' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Birth Place '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_birth_date($id)
+    {
+        // get  birth Date
+        $Birth_date = $this->request->getVar('Birth_date');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set BIRTH_DATE = '$Birth_date' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Birth Date '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_ipi_number($id)
+    {
+        // get ipi number
+        $IPI_number = $this->request->getVar('IPI_number');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set IPI_NUMBER = '$IPI_number' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated IPI Number '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_identity_number($id)
+    {
+        // get ipi number
+        $Identity_number = $this->request->getVar('Identity_number');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set IDENTITY_NUMBER = '$Identity_number' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated IPI Number '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+    public function Update_data_composer_tax_id_number($id)
+    {
+        // get tax id number
+        $Tax_id_number = $this->request->getVar('Tax_id_number');
+
+        $db = \Config\Database::connect();
+        $sql_composer = "Update tb_composer set TAX_ID_NUMBER = '$Tax_id_number' where ID_COMPOSER = '$id' ";
+        $db->query($sql_composer);
+        session()->setFlashdata('add','Updated Tax Id Number '. $id . ' Success');
+        return redirect()->to('/Composer/Detail/'.$id);
+    }
+
+
 
     public function Delete_data_composer($Id)
     {

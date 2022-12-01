@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Nov 2022 pada 12.24
+-- Waktu pembuatan: 01 Des 2022 pada 16.45
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.1.10
 
@@ -142,7 +142,10 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (24, '::1', 'admin@gmail.com', 1, '2022-11-28 02:43:38', 1),
 (25, '::1', 'admin@gmail.com', 1, '2022-11-28 20:17:58', 1),
 (26, '::1', 'admin@gmail.com', 1, '2022-11-28 22:39:05', 1),
-(27, '::1', 'admin@gmail.com', 1, '2022-11-29 00:52:27', 1);
+(27, '::1', 'admin@gmail.com', 1, '2022-11-29 00:52:27', 1),
+(28, '::1', 'admin@gmail.com', 1, '2022-11-30 02:01:33', 1),
+(29, '::1', 'admin@gmail.com', 1, '2022-11-30 22:12:26', 1),
+(30, '::1', 'admin@gmail.com', 1, '2022-12-01 05:17:56', 1);
 
 -- --------------------------------------------------------
 
@@ -259,7 +262,7 @@ CREATE TABLE `tb_composer` (
   `ID_COMPOSER` varchar(255) NOT NULL,
   `COMPOSER_ORIGINAL_NAME` varchar(50) NOT NULL,
   `COMPOSER_POPULAR_NAME` varchar(255) NOT NULL,
-  `GENDER` varchar(5) NOT NULL,
+  `GENDER` varchar(10) NOT NULL,
   `BIRTH_DATE` date NOT NULL,
   `BIRTH_PLACE` varchar(20) NOT NULL,
   `ADDRESS` varchar(255) NOT NULL,
@@ -288,9 +291,12 @@ CREATE TABLE `tb_composer` (
 --
 
 INSERT INTO `tb_composer` (`ID_COMPOSER`, `COMPOSER_ORIGINAL_NAME`, `COMPOSER_POPULAR_NAME`, `GENDER`, `BIRTH_DATE`, `BIRTH_PLACE`, `ADDRESS`, `CITY`, `COUNTRY`, `POST_CODE`, `ADDRESS_CORRESPONDENCE`, `EMAIL`, `IDENTITY_NUMBER`, `TAX_ID_NUMBER`, `IPI_NUMBER`, `BANK_NAME`, `BANK_ACCOUNT_NAME`, `BANK_ACCOUNT_NUMBER`, `CITY_OF_BANK`, `BRANCH`, `CMO_NAME`, `ORIGINAL_PUBLISHING`, `SUB_PUBLISHING`, `PHOTO`, `STATUS`) VALUES
-('KCP-CPS-1', 'testing', 'testing1,testing22', 'M', '2022-11-05', 'testing', 'testing', 'KABUPATEN SIMEULUE', 'Indonesia', '122', 'testing', 'testing@gmail.com', '123', '123', '123', 'BCA', 'testing', '122', 'testing', 'testing', '123testing', '', '', 'Screenshot 2022-11-29 143417.png', 'Actived'),
+('KCP-CPS-1', 'com 1', 'comone,compoone', 'Male', '2020-02-13', 'Bekasi', 'testing', 'KABUPATEN SIMEULUE', 'Indonesia', '122', 'testing', 'testing@gmail.com', '123111', '123', '123456', 'BCA', 'testing', '122', 'testing', 'testing', '123testing', '', '', 'DSC00895_1.JPG', 'Non-Active'),
 ('KCP-CPS-2', 'testing 2', 'agus,yogandi', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('KCP-CPS-3', 'testing 3', 'agus ,', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Screenshot 2022-11-29 143417_1.png', '');
+('KCP-CPS-3', 'testing 3', 'agus ,', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Screenshot 2022-11-29 143417_1.png', ''),
+('KCP-CPS-4', 'yogandi agus', 'lll', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'DSC00896.JPG', 'Non-Active'),
+('KCP-CPS-5', 'ffff', 'fff,aaa', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Non-Active'),
+('KCP-CPS-6', 'tiga', '12sadasd', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -312,7 +318,8 @@ CREATE TABLE `tb_contract` (
 --
 
 INSERT INTO `tb_contract` (`ID_CONTRACT`, `CONTRACT_NUMBER`, `COMPOSER`, `SONGS`, `PERCENTAGE`, `CREATED_AT`) VALUES
-('KCP-CTR-1', '123123123', '', 'ada,apa,dengan cinta', 70, '0000-00-00');
+('KCP-CTR-1', '123123123', '', 'ada,apa,dengan cinta', 70, '0000-00-00'),
+('KCP-CTR-2', '12345', '', 'aaaaaa', 12, '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -402,7 +409,11 @@ CREATE TABLE `tb_telephone` (
 INSERT INTO `tb_telephone` (`ID_TELEPHONE`, `TELEPHONE_NUMBER`, `TELEPHONE_SUBJECT`) VALUES
 ('KCP-CPS-1', '111,2221', 'one,sdasd ss'),
 ('KCP-CPS-2', '0', ''),
-('KCP-CPS-3', '0', '');
+('KCP-CPS-3', '0', ''),
+('KCP-CPS-4', '12345678,12345678', 'nomer pribadi 1,nomer pribadi 2'),
+('KCP-CPS-5', '12345678', 'asd'),
+('KCP-CPS-6', '123123123', 'aaa'),
+('KCP-CPS-7', '123123123', 'asd');
 
 -- --------------------------------------------------------
 
@@ -566,7 +577,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT untuk tabel `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT untuk tabel `auth_permissions`

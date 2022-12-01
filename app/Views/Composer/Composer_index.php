@@ -26,14 +26,34 @@ $this->section('Content') ?>
                     </div>
                     <!-- Popular name -->
                     <div class="mb-2">
-                        <label for="Composer_popular_name" class="form-label">Popular Name</label>
+                        <label for="Composer_popular_name" class="form-label">Popular Name (Optional)</label>
                         <input type="text" class="form-control" name="Composer_popular_name[]"
-                            placeholder="Popular Name 1 (Optional)" id="Composer_popular_name">
+                            placeholder="Popular Name 1" id="Composer_popular_name">
                     </div>
                     <div class="mb-4">
                         <input type="text" class="form-control" name="Composer_popular_name[]"
-                            placeholder="Popular Name 2 (Optional)" id="Composer_popular_name">
+                            placeholder="Popular Name 2" id="Composer_popular_name">
                     </div>
+                    <!-- Phone number -->
+                    <div class="mb-4">
+                        <label for="Phone_number" class="form-label">Phone Number</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <button class="btn btn-success btn-sm add-more-phone-number"
+                                        type="button">Add</button>
+                                    <input type="number" class="form-control" name="Phone_number[]"
+                                        placeholder="Your number" id="Phone_number" required minlength="8">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Subject"
+                                    name="Subject_phone_number[]" id="Subject_phone_number" required minlength="2">
+                            </div>
+                        </div>
+                        <div class="after-add-more-phone-number"></div>
+                    </div>
+
                     <div class="d-grid">
                         <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">Submit</button>
                     </div>
